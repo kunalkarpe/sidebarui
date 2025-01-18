@@ -7,7 +7,7 @@ const CurrentUserCard = ({ cardData, closeSideBar }) => {
       <div className="flex w-full gap-2">
         <img
           src={cardData?.image?.src}
-          alt=""
+          alt="image.jpg"
           className={`h-8 w-8 rounded-full`}
         />
         {closeSideBar === false ? (

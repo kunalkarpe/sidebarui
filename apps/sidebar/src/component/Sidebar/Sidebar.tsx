@@ -9,7 +9,7 @@ const Sidebar = () => {
   const { closeSideBar, setCloseSidebar } = useContext(SidebarContext);
   return (
     <div
-      className={`flex flex-col gap-6 h-full p-2 bg-white rounded-xl ${closeSideBar === true ? "w-16" : "w-full"}`}
+      className={`flex flex-col gap-6 h-full p-2 bg-white rounded-xl  ${closeSideBar === true ? "w-16" : "w-full"}`}
     >
       <div className="flex flex-col gap-4 h-[23rem] border-b border-extraLightGray p-2">
         <div className="flex justify-between h-12 items-center">
@@ -34,10 +34,13 @@ const Sidebar = () => {
         </div>
         <SideTabs closeSideBar={closeSideBar} />
       </div>
+
+
       <CurrentUserCard
         cardData={CURRENT_USER_DATA}
         closeSideBar={closeSideBar}
       />
+
     </div>
   );
 };

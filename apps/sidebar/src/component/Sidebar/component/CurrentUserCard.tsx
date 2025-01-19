@@ -3,7 +3,7 @@ import React from "react";
 
 const CurrentUserCard = ({ cardData, closeSideBar }) => {
   return (
-    <div className="flex justify-between gap-2 border border-extraLightGray rounded-lg h-12 p-2 shadow-md bg-offWhite">
+    <div className="flex justify-between gap-2 border border-extraLightGray rounded-lg h-12 p-2 shadow-md bg-offWhite absoulte bottom-0">
       <div className="flex w-full gap-2">
         <img
           src={cardData?.image?.src}
@@ -21,7 +21,7 @@ const CurrentUserCard = ({ cardData, closeSideBar }) => {
       </div>
       {closeSideBar === false && (
         <button
-          onClick={() => {}}
+          onClick={() => { }}
           className="hover:cursor-pointer"
           type="button"
         >

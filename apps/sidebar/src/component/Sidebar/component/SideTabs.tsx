@@ -20,7 +20,6 @@ const SideTabs = ({ closeSideBar }) => {
       prevsTabs[index],
       prevsTabs[sideTabId],
     ];
-    console.log(prevsTabs);
     setSideTabs(prevsTabs);
   };
 

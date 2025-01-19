@@ -13,9 +13,11 @@ const SideTabs = ({ closeSideBar }) => {
             className={`flex  text-xs gap-4 h-9 items-center rounded-lg px-2 ${isActivated ? "bg-primary/90 text-white border border-extraLightGray" : ""}`}
             key={sideTab?.id}
             onClick={() => setActive(sideTab?.id)}
+
           >
             <p>{sideTab?.icon}</p>
             {closeSideBar === false && <p>{sideTab?.name}</p>}
+
           </button>
         );
       })}
